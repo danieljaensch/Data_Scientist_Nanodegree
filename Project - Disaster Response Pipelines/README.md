@@ -10,6 +10,11 @@ Below are a few screenshots of the web app.
 ![disaster-response-project1](./image/disaster-response-project1.png)
 ![disaster-response-project2](./image/disaster-response-project2.png)
 
+## Overview of training dataset
+![image_distribution](./image/image_distribution.png)
+![image_percentage](./image/image_percentage.png)
+
+
 ## Project Components
 
 There are three components you'll need to complete for this project.
@@ -140,7 +145,7 @@ The whole project is located in the jupyter notebook files `ETL Pipeline Prepara
         `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
 
 2. Run the following command in the app's directory to run your web app.
-    `python run.py`
+    `python app/run.py`
 
 3. Go to http://0.0.0.0:3001/
 
