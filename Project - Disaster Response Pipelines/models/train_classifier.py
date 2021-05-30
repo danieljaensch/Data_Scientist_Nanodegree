@@ -50,7 +50,7 @@ def load_data(database_filepath):
     '''
     # load data from database
     engine = create_engine('sqlite:///' + database_filepath)
-    df = pd.read_sql_table('cleaned_messages', engine)
+    df = pd.read_sql_table('InsertTableName', engine)
 
     # drop nan values
     df.dropna(axis=0, how = 'any', inplace = True)
@@ -110,7 +110,7 @@ def build_model():
     cv = GridSearchCV( pipeline, param_grid=parameters )
 
     return cv
-    
+
 
 
 def get_evaluation(y_test, y_pred, category_names):
